@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% if page.title %}{{ page.title | escape }} &mdash; {% endif %}Wobscale</title>
+        <link rel="stylesheet" href="{{ "/css/main.css" }}?{{ site.time | date: '%s' }}">
+    </head>
+    <body>
+        <header>
+            <h1><a href="https://wobscale.website/">Wobscale Technologies</a></h1>
+            <p><a href="http://bgp.he.net/AS64241">AS64241</a> &middot; Seattle</p>
+        </header>
+        {{ content }}
+    </body>
+</html>
