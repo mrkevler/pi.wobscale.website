@@ -148,8 +148,7 @@ header {
 
 #features {
     list-style: none;
-    padding-left: 2.5rem;
-    text-indent: -2.5rem;
+    padding-left: 0;
 
     @media screen and (min-width: 768px) {
         column-count: 3;
