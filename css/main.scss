@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-header, #hero .inner, #signup .inner {
+header, #hero .inner, #signup .inner, #content {
     margin-left: auto;
     margin-right: auto;
     max-width: 60rem;
@@ -94,6 +94,7 @@ header {
     background-color: $green;
     color: white;
     text-align: center;
+    margin-bottom: 2.5rem;
 
     .inner {
         padding: 1.5em;
@@ -117,5 +118,19 @@ header {
         &:hover {
             background-color: darken($green, 10);
         }
+    }
+}
+
+#features {
+    list-style: none;
+    padding-left: 0;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+
+    li:before {
+        content: '✓';
+        padding-right: .5rem;
+        color: $green;
     }
 }
